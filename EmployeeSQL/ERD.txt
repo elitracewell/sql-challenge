@@ -1,0 +1,30 @@
+  +-------------+       +--------------+       +---------------+
+  | departments |       |   dept_emp   |       |  dept_manager |
+  +-------------+       +--------------+       +---------------+
+  | dept_no PK  | 1--M  | emp_no FK    | M--1  | dept_no FK    |
+  | dept_name   |       | dept_no FK   |       | emp_no FK     |
+  +-------------+       | from_date    |       | from_date     |
+                         | to_date      |       | to_date       |
+                         +--------------+       +---------------+
+                                   |
+                                   |
+                     +--------------+--------------+
+                     |                             |
+         +----------+---------+          +----------+----------+
+         |    employees       |          |        salaries       |
+         +----------+---------+          +----------+----------+
+                    |                           |
+        PK emp_no---1-M                           |
+                    |                           |
+            +-------+------+             +------+--------+
+            |             |             |               |
+    +-------+--------+ +--+-------+ +---+---------+ +--+--------+
+    |   titles        | |  departments | |   dept_emp  | |  employees |
+    +-----------------+ +-------------+ +------------+ +------------+
+    | emp_no FK       | | dept_no FK  | | emp_no FK   | | emp_no PK  |
+    | title           | | dept_name  | | dept_no FK  | | birth_date |
+    | from_date PK    | +-------------+ | from_date  | | first_name|
+    | to_date         |                 | to_date    | | last_name |
+    +-----------------+                 +------------+ | gender    |
+                                                         | hire_date |
+                                                         +-----------+
