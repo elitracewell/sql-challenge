@@ -3,6 +3,34 @@ Module 9 Challenge
 
 *EmployeeSQL folder houses SQL code (table schema and queries) and the ERD*
 
+# Skills Demonstrated
+
+-Run Postgres and pgAdmin.
+
+-Create a SQL database and its tables by using pgAdmin.
+
+-Define SQL data types, primary keys, and unique values.
+
+-Load the data from CSV files into a database and then query the data.
+
+-Explain the four basic functions of persistent storage—create, read, update, delete (CRUD)—and apply them to a database.
+
+-Combine the data from multiple tables by using JOIN clauses.
+
+-Create aggregate queries.
+
+-Create subqueries to further explore data.
+
+-Create views and run subqueries off of them.
+
+-Apply data modeling techniques to database design.
+
+-Normalize data.
+
+-Identify data relationships.
+
+-Create visual representations of a database by using ERDs.
+
 # Background
 It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company). Your first major task is to do a research project about people whom the company employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files.
 
